@@ -29,7 +29,6 @@ if ($result->num_rows > 0) {
                 <td>" . htmlspecialchars($row['date']) . "</td>
                 <td>" . htmlspecialchars($row['NIC']) . "</td>
                 <td>" . htmlspecialchars($row['language']) . "</td>
-                <td>" . htmlspecialchars($row['phoneNumber']) . "</td>
                 <td>
                     <form method='post' action='delete_employee.php' onsubmit='return confirmDelete();'>
                         <input type='hidden' name='employee_id' value='" . htmlspecialchars($row['NIC']) . "'>

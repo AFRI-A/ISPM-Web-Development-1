@@ -58,6 +58,8 @@ body, html {
     transition: background-color 0.3s;
 }
 
+.banner-content .btn:hover {
+}
 
 .banner-image img {
     max-width: 400px;

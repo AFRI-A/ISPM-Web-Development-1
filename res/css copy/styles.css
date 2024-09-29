@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333;
+}
+
+h1, h2 {
+    color: #ffffff; /* Light green for headings */
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    color: #1e5d40; /* Darker green for hover effects */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Main Banner */
+.main-banner {
+    background-color: #add8e6; /* Light blue for the banner */
+    color: #fff;
+    padding: 100px 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Adjust height as needed */
+}
+
+.banner-content-container {
+    display: flex;
+    justify-content: space-between; /* Evenly space the content and image */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Restrict the banner width */
+}
+
+/* Banner Content on the Left */
+.banner-content {
+    flex: 1; /* Take up available space */
+    text-align: left;
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    color: #2e8b57; /* Light green */
+}
+
+.banner-content p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.banner-content .btn {
+    background-color: #2e8b57;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.banner-content .btn:hover {
+    background-color: #1e5d40;
+}
+
+/* Image on the Right */
+.banner-image {
+    flex: 1; /* Take up the other half of the space */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.banner-image img {
+    max-width: 80%; /* Adjust size to fit nicely */
+    height: auto;
+    border-radius: 8px;
+}
+
+
+/* Overview Section */
+.overview {
+    padding: 50px;
+    text-align: center;
+    background-color: #e0f7fa; /* Very light blue */
+}
+
+.overview p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Security Policies Section */
+.security-policies {
+    padding: 50px;
+    background-color: #f5f5f5;
+}
+
+.security-policies ul li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #2e8b57;
+}
+/* Flexbox layout for the content container */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f5f5f5; /* Light gray background for the section */
+}
+
+
+/* Add this to the existing CSS */
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Apply animation to the banner content */
+.banner-content {
+    animation: fadeIn 2s ease-in-out; /* 2 seconds duration */
+}
+
