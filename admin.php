@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="admin2.css">
+    <link rel="stylesheet" href="res/css/admin2.css">
     <script>
         function confirmDelete() {
             return confirm("Are you sure you want to delete this employee?");
@@ -38,7 +38,6 @@
                             <th>Date Registered</th>
                             <th>NIC</th>
                             <th>Language</th>
-                            <th>Phone Number</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
@@ -51,3 +50,4 @@
     </div>
 </body>
 </html>
+
