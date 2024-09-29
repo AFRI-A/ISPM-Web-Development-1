@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `quiz_results`
 --
 
-CREATE TABLE `quiz_results` (
+CREATE TABLE `quiz_results1` (
   `id` int(11) NOT NULL,
   `user_email` varchar(255) DEFAULT NULL,
   `score` int(11) DEFAULT NULL,
@@ -36,10 +36,10 @@ CREATE TABLE `quiz_results` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `quiz_results`
+-- Dumping data for table `quiz_results1`
 --
 
-INSERT INTO `quiz_results` (`id`, `user_email`, `score`, `total_questions`, `date_taken`) VALUES
+INSERT INTO `quiz_results1` (`id`, `user_email`, `score`, `total_questions`, `date_taken`) VALUES
 (1, 'example@example.com', 5, 5, '2024-09-29 16:57:34'),
 (2, 'example@example.com', 4, 5, '2024-09-29 16:58:11'),
 (3, 'example@example.com', 5, 5, '2024-09-29 16:58:22'),
@@ -50,9 +50,9 @@ INSERT INTO `quiz_results` (`id`, `user_email`, `score`, `total_questions`, `dat
 --
 
 --
--- Indexes for table `quiz_results`
+-- Indexes for table `quiz_results1`
 --
-ALTER TABLE `quiz_results`
+ALTER TABLE `quiz_results1`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -62,7 +62,7 @@ ALTER TABLE `quiz_results`
 --
 -- AUTO_INCREMENT for table `quiz_results`
 --
-ALTER TABLE `quiz_results`
+ALTER TABLE `quiz_results1`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
