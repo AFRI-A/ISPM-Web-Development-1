@@ -48,6 +48,12 @@
             </section>
         </div>
     </div>
+
+    <!-- Home Button -->
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="index2.html" style="padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px;">Home</a>
+    </div>
 </body>
 </html>
+
 
