@@ -4,14 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="res/css/admin2.css">
+    <link rel="stylesheet" href="admin2.css">
     <script>
         function confirmDelete() {
             return confirm("Are you sure you want to delete this employee?");
-        }
-
-        function showAlert(message) {
-            alert(message);
         }
     </script>
 </head>
@@ -21,7 +17,6 @@
             <ul class="nav">
                 <li class="nav-item"><a href="#" class="nav-link active">Dashboard</a></li>
                 <li class="nav-item"><a href="#employee-management" class="nav-link">Employee Management</a></li>
-               
             </ul>
         </div>
 
@@ -36,10 +31,14 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>ID</th>
-                            <th>Name</th>
+                            <th>Title</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
                             <th>Email</th>
-                            <th>Last Login</th>
+                            <th>Date Registered</th>
+                            <th>NIC</th>
+                            <th>Language</th>
+                            <th>Phone Number</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
@@ -48,11 +47,6 @@
                     </tbody>
                 </table>
             </section>
-
-          
-            </section>
-
-           
         </div>
     </div>
 </body>
