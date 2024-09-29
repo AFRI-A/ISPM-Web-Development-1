@@ -1,7 +1,7 @@
 <?php
 // Database connection
 $host = 'localhost'; // your database host
-$dbname = 'network_quiz'; // updated database name
+$dbname = 'project'; // updated database name
 $username = 'root'; // your database username
 $password = ''; // your database password
 
@@ -18,7 +18,7 @@ $score = $_POST['score'];      // Final score
 $totalQuestions = $_POST['total_questions']; // Total number of questions
 
 // Insert the score into the database
-$query = "INSERT INTO quiz_results (user_email, score, total_questions, date_taken) VALUES (:email, :score, :total_questions, NOW())";
+$query = "INSERT INTO quiz_results1 (user_email, score, total_questions, date_taken) VALUES (:email, :score, :total_questions, NOW())";
 $stmt = $pdo->prepare($query);
 $stmt->bindParam(':email', $email);
 $stmt->bindParam(':score', $score);
